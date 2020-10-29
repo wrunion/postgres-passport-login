@@ -1,7 +1,11 @@
-<h1>Login</h1>
+<%- include('./partials/head'); %>
+<header>
+  <h1>Login</h1>
+</header>
 <% if (messages.error) { %>
   <%= messages.error %>
 <% } %>
+<main>
 <form action="/login" method="POST">
   <div>
     <label for="email">Email</label>
@@ -14,3 +18,4 @@
   <button type="submit">Login</button>
 </form>
 <a href="/register">Register</a>
+</main>
